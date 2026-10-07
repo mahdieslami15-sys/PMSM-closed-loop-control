@@ -43,7 +43,7 @@ P_{\mathrm{shaft}}=T_{\mathrm{shaft}}\omega_{m}
 The d-axis follows PM flux; q leads d by 90 electrical degrees. For raw mechanical angle, the five pole pairs multiply the angle and speed. Direction sign s = ±1 and electrical alignment offset $`\theta_{0}`$ complete the conversion:
 
 ```math
-\theta_{e}=\operatorname{wrap}(s\,5\theta_{m}+\theta_{0}),\qquad
+\theta_{e}=\mathrm{wrap}(s\,5\theta_{m}+\theta_{0}),\qquad
 \omega_{e}=s\,5\omega_{m}
 ```
 
@@ -387,7 +387,7 @@ $`V_{\mathrm{FW}}`$ is the chosen voltage target, with margin relative to the av
 \begin{aligned}
 \Delta i_{d,\mathrm{raw}}&=K_{p,\mathrm{FW}}e_{V}+x_{\mathrm{FW}},
 &K_{p,\mathrm{FW}},K_{i,\mathrm{FW}}&>0\\
-\Delta i_{d,\mathrm{FW}}&=\operatorname{clip}
+\Delta i_{d,\mathrm{FW}}&=\mathrm{clip}
 (\Delta i_{d,\mathrm{raw}},\,i_{d,\min}-i_{d,0}^{\ast},\,0)\\
 i_{d}^{\ast}&=i_{d,0}^{\ast}+\Delta i_{d,\mathrm{FW}}
 \end{aligned}
@@ -427,7 +427,7 @@ Maximum torque per ampere (MTPA) selects a current pair for a specified accepted
 
 ```math
 (i_{d,0}^{\ast},i_{q,0}^{\ast})
-=\underset{i_{d},i_{q}}{\operatorname{arg\,min}}\;(i_{d}^{2}+i_{q}^{2})
+=\underset{i_{d},i_{q}}{\mathrm{arg\,min}}\;(i_{d}^{2}+i_{q}^{2})
 \quad\text{subject to}\quad
 \frac32p\bigl[\psi_{f}i_{q}+(L_{d}-L_{q})i_{d}i_{q}\bigr]=T_{\mathrm{acc}}^{\ast}
 ```
@@ -455,7 +455,7 @@ In the motorcycle, MTPA and FW operate within one torque-to-current coordinator.
 Raw mechanical position uses the confirmed five pole pairs; an already calibrated $`\theta_{e}`$ passes directly to Park and inverse Park:
 
 ```math
-\theta_{e}=\operatorname{wrap}(s\,5\theta_{m}+\theta_{0}),\qquad
+\theta_{e}=\mathrm{wrap}(s\,5\theta_{m}+\theta_{0}),\qquad
 \omega_{e}=s\,5\omega_{m},\qquad s\in\{-1,+1\}
 ```
 
