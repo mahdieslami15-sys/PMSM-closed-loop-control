@@ -1,6 +1,6 @@
 # PMSM Closed-Loop Control
 
-Field-oriented control documentation for a **3-kW electric-motorcycle drive** using a **ten-pole IPMSM** ($p=5$). The rider commands torque through the throttle. Closed d- and q-axis current loops regulate the selected current references, while measured rotor speed supplies the operating point for reference generation and compensation.
+Field-oriented control documentation for a **3-kW electric-motorcycle drive** using a **ten-pole IPMSM** ($`p=5`$). The rider commands torque through the throttle. Closed d- and q-axis current loops regulate the selected current references, while measured rotor speed supplies the operating point for reference generation and compensation.
 
 **[Read the complete FOC development report](docs/FOC_REPORT.md)**
 
